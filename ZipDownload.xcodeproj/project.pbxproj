@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0F42E10E132E4A9CA1E8D1B8 /* Pods_ZipDownload.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FFCD06B4D3A54BF7396F39AF /* Pods_ZipDownload.framework */; };
 		AE8F1C0E1FACDB7400F74DEC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE8F1C0D1FACDB7400F74DEC /* AppDelegate.swift */; };
 		AE8F1C101FACDB7400F74DEC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE8F1C0F1FACDB7400F74DEC /* ViewController.swift */; };
 		AE8F1C131FACDB7400F74DEC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AE8F1C111FACDB7400F74DEC /* Main.storyboard */; };
@@ -15,6 +16,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		65C023F5C21A1FEB7722A3EE /* Pods-ZipDownload.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZipDownload.release.xcconfig"; path = "Pods/Target Support Files/Pods-ZipDownload/Pods-ZipDownload.release.xcconfig"; sourceTree = "<group>"; };
+		A363738B9DABBBF8D29767D4 /* Pods-ZipDownload.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZipDownload.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ZipDownload/Pods-ZipDownload.debug.xcconfig"; sourceTree = "<group>"; };
 		AE8F1C0A1FACDB7400F74DEC /* ZipDownload.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ZipDownload.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AE8F1C0D1FACDB7400F74DEC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		AE8F1C0F1FACDB7400F74DEC /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +25,7 @@
 		AE8F1C141FACDB7400F74DEC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AE8F1C171FACDB7400F74DEC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		AE8F1C191FACDB7400F74DEC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FFCD06B4D3A54BF7396F39AF /* Pods_ZipDownload.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ZipDownload.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +33,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0F42E10E132E4A9CA1E8D1B8 /* Pods_ZipDownload.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0473DB96DCEB2C38C2931F8F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				FFCD06B4D3A54BF7396F39AF /* Pods_ZipDownload.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		62DE79E5D84B61A73A2BF651 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				A363738B9DABBBF8D29767D4 /* Pods-ZipDownload.debug.xcconfig */,
+				65C023F5C21A1FEB7722A3EE /* Pods-ZipDownload.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		AE8F1C011FACDB7400F74DEC = {
 			isa = PBXGroup;
 			children = (
 				AE8F1C0C1FACDB7400F74DEC /* ZipDownload */,
 				AE8F1C0B1FACDB7400F74DEC /* Products */,
+				62DE79E5D84B61A73A2BF651 /* Pods */,
+				0473DB96DCEB2C38C2931F8F /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -71,9 +95,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = AE8F1C1C1FACDB7400F74DEC /* Build configuration list for PBXNativeTarget "ZipDownload" */;
 			buildPhases = (
+				03E278F2D6491C963B1102D4 /* [CP] Check Pods Manifest.lock */,
 				AE8F1C061FACDB7400F74DEC /* Sources */,
 				AE8F1C071FACDB7400F74DEC /* Frameworks */,
 				AE8F1C081FACDB7400F74DEC /* Resources */,
+				DFE954990908E594B411BD60 /* [CP] Embed Pods Frameworks */,
+				14A493265F0EF0F8F037BA48 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -130,6 +157,60 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		03E278F2D6491C963B1102D4 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ZipDownload-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		14A493265F0EF0F8F037BA48 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ZipDownload/Pods-ZipDownload-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DFE954990908E594B411BD60 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-ZipDownload/Pods-ZipDownload-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Zip/Zip.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Zip.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ZipDownload/Pods-ZipDownload-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		AE8F1C061FACDB7400F74DEC /* Sources */ = {
@@ -272,6 +353,7 @@
 		};
 		AE8F1C1D1FACDB7400F74DEC /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A363738B9DABBBF8D29767D4 /* Pods-ZipDownload.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -287,6 +369,7 @@
 		};
 		AE8F1C1E1FACDB7400F74DEC /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 65C023F5C21A1FEB7722A3EE /* Pods-ZipDownload.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;

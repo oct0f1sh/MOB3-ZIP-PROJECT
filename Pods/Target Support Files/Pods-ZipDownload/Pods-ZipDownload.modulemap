@@ -1,0 +1,6 @@
+framework module Pods_ZipDownload {
+  umbrella header "Pods-ZipDownload-umbrella.h"
+
+  export *
+  module * { export * }
+}
