@@ -8,16 +8,24 @@
 
 /* Begin PBXBuildFile section */
 		0F42E10E132E4A9CA1E8D1B8 /* Pods_ZipDownload.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FFCD06B4D3A54BF7396F39AF /* Pods_ZipDownload.framework */; };
+		AE4EF25A1FACE86B00AD1375 /* UnzipService.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE4EF2591FACE86B00AD1375 /* UnzipService.swift */; };
+		AE4EF25C1FAD079600AD1375 /* CollectionImgCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE4EF25B1FAD079600AD1375 /* CollectionImgCell.swift */; };
+		AE4EF25E1FAD0B5500AD1375 /* ImagesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE4EF25D1FAD0B5500AD1375 /* ImagesViewController.swift */; };
 		AE8F1C0E1FACDB7400F74DEC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE8F1C0D1FACDB7400F74DEC /* AppDelegate.swift */; };
 		AE8F1C101FACDB7400F74DEC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE8F1C0F1FACDB7400F74DEC /* ViewController.swift */; };
 		AE8F1C131FACDB7400F74DEC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AE8F1C111FACDB7400F74DEC /* Main.storyboard */; };
 		AE8F1C151FACDB7400F74DEC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AE8F1C141FACDB7400F74DEC /* Assets.xcassets */; };
 		AE8F1C181FACDB7400F74DEC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AE8F1C161FACDB7400F74DEC /* LaunchScreen.storyboard */; };
+		AE8F1C271FACDD8800F74DEC /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE8F1C261FACDD8800F74DEC /* NetworkService.swift */; };
+		AE8F1C291FACDE4700F74DEC /* JsonModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE8F1C281FACDE4700F74DEC /* JsonModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		65C023F5C21A1FEB7722A3EE /* Pods-ZipDownload.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZipDownload.release.xcconfig"; path = "Pods/Target Support Files/Pods-ZipDownload/Pods-ZipDownload.release.xcconfig"; sourceTree = "<group>"; };
 		A363738B9DABBBF8D29767D4 /* Pods-ZipDownload.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZipDownload.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ZipDownload/Pods-ZipDownload.debug.xcconfig"; sourceTree = "<group>"; };
+		AE4EF2591FACE86B00AD1375 /* UnzipService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UnzipService.swift; sourceTree = "<group>"; };
+		AE4EF25B1FAD079600AD1375 /* CollectionImgCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionImgCell.swift; sourceTree = "<group>"; };
+		AE4EF25D1FAD0B5500AD1375 /* ImagesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagesViewController.swift; sourceTree = "<group>"; };
 		AE8F1C0A1FACDB7400F74DEC /* ZipDownload.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ZipDownload.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AE8F1C0D1FACDB7400F74DEC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		AE8F1C0F1FACDB7400F74DEC /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -25,6 +33,8 @@
 		AE8F1C141FACDB7400F74DEC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AE8F1C171FACDB7400F74DEC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		AE8F1C191FACDB7400F74DEC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AE8F1C261FACDD8800F74DEC /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
+		AE8F1C281FACDE4700F74DEC /* JsonModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JsonModel.swift; sourceTree = "<group>"; };
 		FFCD06B4D3A54BF7396F39AF /* Pods_ZipDownload.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ZipDownload.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -78,14 +88,75 @@
 		AE8F1C0C1FACDB7400F74DEC /* ZipDownload */ = {
 			isa = PBXGroup;
 			children = (
-				AE8F1C0D1FACDB7400F74DEC /* AppDelegate.swift */,
-				AE8F1C0F1FACDB7400F74DEC /* ViewController.swift */,
-				AE8F1C111FACDB7400F74DEC /* Main.storyboard */,
+				AE8F1C251FACDD2800F74DEC /* Services */,
+				AE8F1C241FACDD2100F74DEC /* Extensions */,
+				AE8F1C1F1FACDCF900F74DEC /* Models */,
+				AE8F1C201FACDD0C00F74DEC /* Views */,
+				AE8F1C211FACDD1100F74DEC /* View Controllers */,
+				AE8F1C221FACDD1700F74DEC /* Storyboards */,
+				AE8F1C231FACDD1B00F74DEC /* Supporting Files */,
 				AE8F1C141FACDB7400F74DEC /* Assets.xcassets */,
-				AE8F1C161FACDB7400F74DEC /* LaunchScreen.storyboard */,
-				AE8F1C191FACDB7400F74DEC /* Info.plist */,
 			);
 			path = ZipDownload;
+			sourceTree = "<group>";
+		};
+		AE8F1C1F1FACDCF900F74DEC /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				AE8F1C281FACDE4700F74DEC /* JsonModel.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		AE8F1C201FACDD0C00F74DEC /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				AE4EF25B1FAD079600AD1375 /* CollectionImgCell.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		AE8F1C211FACDD1100F74DEC /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				AE8F1C0F1FACDB7400F74DEC /* ViewController.swift */,
+				AE4EF25D1FAD0B5500AD1375 /* ImagesViewController.swift */,
+			);
+			path = "View Controllers";
+			sourceTree = "<group>";
+		};
+		AE8F1C221FACDD1700F74DEC /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				AE8F1C111FACDB7400F74DEC /* Main.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		AE8F1C231FACDD1B00F74DEC /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				AE8F1C191FACDB7400F74DEC /* Info.plist */,
+				AE8F1C161FACDB7400F74DEC /* LaunchScreen.storyboard */,
+				AE8F1C0D1FACDB7400F74DEC /* AppDelegate.swift */,
+			);
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		AE8F1C241FACDD2100F74DEC /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		AE8F1C251FACDD2800F74DEC /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				AE8F1C261FACDD8800F74DEC /* NetworkService.swift */,
+				AE4EF2591FACE86B00AD1375 /* UnzipService.swift */,
+			);
+			path = Services;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -218,6 +289,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				AE8F1C101FACDB7400F74DEC /* ViewController.swift in Sources */,
+				AE4EF25E1FAD0B5500AD1375 /* ImagesViewController.swift in Sources */,
+				AE4EF25A1FACE86B00AD1375 /* UnzipService.swift in Sources */,
+				AE8F1C291FACDE4700F74DEC /* JsonModel.swift in Sources */,
+				AE4EF25C1FAD079600AD1375 /* CollectionImgCell.swift in Sources */,
+				AE8F1C271FACDD8800F74DEC /* NetworkService.swift in Sources */,
 				AE8F1C0E1FACDB7400F74DEC /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -358,7 +434,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = P4PBGN25JV;
-				INFOPLIST_FILE = ZipDownload/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/ZipDownload/Supporting Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = us.duncanmacdonald.ZipDownload;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -374,7 +450,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = P4PBGN25JV;
-				INFOPLIST_FILE = ZipDownload/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/ZipDownload/Supporting Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = us.duncanmacdonald.ZipDownload;
 				PRODUCT_NAME = "$(TARGET_NAME)";
